@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instituto 21 de Octubre</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #003b73;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header img {
+            max-width: 120px;
+            display: block;
+            margin: 0 auto 10px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        header h3 {
+            margin: 5px 0 0;
+            font-weight: 300;
+            color: #ffcc66;
+        }
+
+        nav {
+            background-color: #00264d;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            display: block;
+        }
+
+        nav a:hover {
+            background-color: #004080;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .section {
+            display: none;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .active {
+            display: block;
+        }
+
+        .flex {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .box {
+            flex: 1;
+            min-width: 300px;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+        }
+
+        .gallery div {
+            background-color: #ddd;
+            height: 150px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            color: #555;
+            overflow: hidden;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            display: block;
+        }
+
+        footer {
+            background-color: #003b73;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: #ffcc00;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        h2 {
+            color: #003b73;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        .activity {
+            margin-bottom: 20px;
+        }
+
+        .activity img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 5px;
+            background-color: #ddd;
+            display: block;
+            margin-top: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <!-- ESPACIO PARA LOGO -->
+        <img src="21DEOCT.jpg" alt="Logo del Instituto">
+        <h1>Instituto 21 de Octubre</h1>
+        <h3>Disciplina, Estudio y Excelencia</h3>
+    </header>
+
+    <nav>
+        <a href="#" onclick="mostrarSeccion('historia'); return false;">Reseña Histórica</a>
+        <a href="#" onclick="mostrarSeccion('mision-vision'); return false;">Misión y Visión</a>
+        <a href="#" onclick="mostrarSeccion('galeria'); return false;">Galería</a>
+        <a href="#" onclick="mostrarSeccion('carreras'); return false;">Carreras</a>
+        <a href="#" onclick="mostrarSeccion('actividades'); return false;">Actividades</a>
+        <a href="#" onclick="mostrarSeccion('contacto'); return false;">Contacto</a>
+    </nav>
+
+    <div class="container">
+
+        <section id="historia" class="section active">
+            <div class="flex">
+                <div class="box">
+                    <h2>Reseña Histórica</h2>
+                    <p>El instituto gubernamental 21 de Octubre, de la colonia del mismo nombre, nace a la vida nacional como proyecto educativo, durante el mes de noviembre de 1996. Se creó para atender los deseos de superación de la juventud de la colonia 21 de octubre y de zonas aledañas.</p>
+                    <p>Desde su fundación hasta la fecha, el instituto ha sido rectorado con mucho acierto por el abogado Fredy Iván Duarte Galdámez, quien ha contado siempre con el apoyo de un personal calificado en todas las áreas y del distrito escolar Nº 11, presidido por la Licda. Mevis Yaneth Irias Ramos.</p>
+                    <p>Iniciamos con la modalidad de ciclo común, actualmente contamos con la modalidad de Bachillerato Técnico Profesional en Contaduría y Finanzas y Bachillerato Técnico Profesional en Informática. Para el año 2017 se incorpora una de las carreras novedosas en el bachillerato: Técnico en Computación orientado a la Robótica.</p>
+                    <p>El Instituto Gubernamental 21 de Octubre, ahora con 20 años de vida, cuenta con su propio edificio, mismo que con el esfuerzo de profesores, padres de familia y la Fundación Amigos de la Frontera ha modernizado sus instalaciones.</p>
+                    <p>Su trinomio filosófico es Disciplina, Estudio, Excelencia. Deseamos para la patria, una Honduras con paz, seguridad, justicia y equidad para todos. Honduras es bella.</p>
+                </div>
+
+                <div class="box">
+                    <h2>Quiénes Somos</h2>
+                    <p>Somos una institución que busca formar y fomentar valores cívicos, éticos y morales para formar un carácter íntegro y de respeto hacia los demás. Somos una institución comprometida a atender la cobertura de los jóvenes, con espíritu de superación, sin discriminación alguna y en un ambiente digno para el proceso de enseñanza.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="mision-vision" class="section">
+            <div class="flex">
+                <div class="box">
+                    <h2>Visión</h2>
+                    <p>Estar a la vanguardia en la formación de recursos humanos competentes, capaces de crear y producir mejores niveles de vida a través de la presentación de un servicio educativo actualizado con calidad y excelencia, que garantice el cumplimiento de nuestra misión y visualizar una patria digna, desarrollada y siempre bajo el imperio del derecho.</p>
+                </div>
+
+                <div class="box">
+                    <h2>Misión</h2>
+                    <p>Institución de educación básica y media que tiene el propósito de impartir una educación integral fundamentada en los avances tecnológicos, valores e ideales que dignifican al ser humano con la finalidad de exaltar la disciplina, el estudio y la excelencia, con la participación comprometida de alumnos, docentes y padres de familia, así formando hondureños críticos y de pensamiento independiente.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="galeria" class="section">
+            <h2>Galería</h2>
+            <div class="gallery">
+                <div><img src="actividad1.jpg" alt="Descripción"></div>
+                <div><img src="actividad2.jpg" alt="Descripción"></div>
+                <div><img src="actividad3.jpg" alt="Descripción"></div>
+                <div><img src="actividad4.jpg" alt="Descripción"></div>
+                <div><img src="actividad5.jpg" alt="Descripción"></div>
+            </div>
+        </section>
+
+        <section id="carreras" class="section">
+            <h2>Carreras</h2>
+            <div class="flex">
+                <div class="box">
+                    <h3>Administración de Empresas</h3>
+                    <p>Formación integral en gestión empresarial, liderazgo, contabilidad y manejo de recursos humanos.</p>
+                    <div><img src="adm.webp" alt="Administración de Empresas" style="width:100%; height:150px; object-fit:cover; border-radius:5px;"></div>
+                </div>
+                <div class="box">
+                    <h3>Informática</h3>
+                    <p>Enseñanza en programación, mantenimiento de hardware, redes y desarrollo de software.</p>
+                    <div><img src="INFO.webp" alt="Carrera de Informática" style="width:100%; height:150px; object-fit:cover; border-radius:5px;"></div>
+                </div>
+                <div class="box">
+                    <h3>Contaduría y Finanzas</h3>
+                    <p>Especialización en manejo financiero, registros contables y análisis económico.</p>
+                    <div><img src="finanzas.jpg" alt="Contaduría y Finanzas" style="width:100%; height:150px; object-fit:cover; border-radius:5px;"></div>
+                </div>
+                <div class="box">
+                    <h3>Bachillerato en Ciencias y Humanidades</h3>
+                    <p>Preparación académica en áreas científicas, sociales y humanísticas para estudios superiores.</p>
+                    <div><img src="humanidades.jpg" alt="Bachillerato en Ciencias y Humanidades" style="width:100%; height:150px; object-fit:cover; border-radius:5px;"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="actividades" class="section">
+            <h2>Actividades</h2>
+            <p>Algunas actividades que se desarrollan en el colegio son:</p>
+            <ul>
+                <li class="activity">
+                    <strong>Lunes Cívicos</strong>
+                    <img src="actividad6.jpg" alt="Actividad 1" style="width: 100%; height: auto; border-radius: 10px;">
+                </li>
+                <li class="activity">
+                    <strong>Celebración Día del Estudiante</strong>
+                     <img src="actividad7.jpg" alt="Actividad 1" style="width: 100%; height: auto; border-radius: 10px;">
+                </li>
+                <li class="activity">
+                    <strong>Celebración Día de la Hondureñidad</strong>
+                     <img src="actividad8.jpg" alt="Actividad 1" style="width: 100%; height: auto; border-radius: 10px;">
+                </li>
+                <li class="activity">
+                    <strong>Paseos educativos y recreativos</strong>
+                    <img src="actividad9.jpg" alt="Actividad 1" style="width: 100%; height: auto; border-radius: 10px;">
+                </li>
+                <li class="activity">
+                    <strong>Actividades de cine</strong>
+                     <img src="actividad10.jpg" alt="Actividad 1" style="width: 100%; height: auto; border-radius: 10px;">
+                </li>
+                <li class="activity">
+                    <strong>Celebración de la independencia</strong>
+                     <img src="actividad11.jpg" alt="Actividad 1" style="width: 100%; height: auto; border-radius: 10px;">
+                </li>
+                <li class="activity">
+                    <strong>Aniversario del instituto</strong>
+                     <img src="actividad12.jpg" alt="Actividad 1" style="width: 100%; height: auto; border-radius: 10px;">
+                </li>
+                <li class="activity">
+                    <strong>Ferias científicas</strong>
+                     <img src="actividad13.jpg" alt="Actividad 1" style="width: 100%; height: auto; border-radius: 10px;">
+                </li>
+                <li class="activity">
+                    <strong>Ferias empresariales</strong>
+                     <img src="deli.jpg" alt="Actividad 1" style="width: 100%; height: auto; border-radius: 10px;">
+                </li>
+            </ul>
+             <p>Entre otras </p>
+        </section>
+
+        <section id="contacto" class="section">
+            <h2>Contacto</h2>
+            <p><strong>Teléfono:</strong> 2221-5706</p>
+            <p><strong>Dirección:</strong> Instituto 21 de Octubre, Col. 21 de Octubre, junto a escuela del mismo nombre</p>
+            <p><a href="https://www.facebook.com/instituto21deoctubre" target="_blank">Visítanos en Facebook</a></p>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Instituto 21 de Octubre | Todos los derechos reservados</p>
+    </footer>
+
+    <script>
+        function mostrarSeccion(id) {
+            document.querySelectorAll('.section').forEach(sec => sec.classList.remove('active'));
+            var s = document.getElementById(id);
+            if (s) s.classList.add('active');
+        }
+    </script>
+
+</body>
+</html>
